@@ -1,0 +1,3 @@
+C:/Users/Chai/Desktop/cpp-test/dll/z2/CMakeFiles/lena-gray.dir
+C:/Users/Chai/Desktop/cpp-test/dll/z2/CMakeFiles/ALL_BUILD.dir
+C:/Users/Chai/Desktop/cpp-test/dll/z2/CMakeFiles/ZERO_CHECK.dir

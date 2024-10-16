@@ -1,0 +1,24 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {   // 对应cl.exe
+            "name": "cl.exe build and debug active file",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "integratedTerminal",  // 这里替换 externalConsole
+            "preLaunchTask": "cl.exe build active file",
+            "logging": {	// 用于消除PDB文件找不到打不开问题，来自于https://none53.hatenablog.com/entry/2019/11/28/vsCode_Cannot_find_or_open_the_PDB_file.
+                "moduleLoad": false
+            }
+        }
+    ]
+}

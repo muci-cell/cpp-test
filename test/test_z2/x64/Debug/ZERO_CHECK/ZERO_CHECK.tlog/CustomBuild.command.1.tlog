@@ -1,0 +1,10 @@
+^C:\USERS\CHAI\DESKTOP\CPP-TEST\TEST\TEST_Z2\CMAKEFILES\F8F831FD5C95486636212C769DD26F80\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Chai/Desktop/cpp-test/test/test_z2 -BC:/Users/Chai/Desktop/cpp-test/test/test_z2 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Chai/Desktop/cpp-test/test/test_z2/test-z2.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

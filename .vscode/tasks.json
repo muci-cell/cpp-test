@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "windows": {
+      "options": {
+        "shell": {
+          "executable": "cmd.exe",
+          "args": [
+            "/C",
+            // The path to VsDevCmd.bat depends on the version of Visual Studio you have installed.
+            "\"C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/VsDevCmd.bat\"",
+            "&&"
+          ]
+        }
+      }
+    },
+    "tasks": [
+      {
+        "type": "shell",
+        "label": "cl.exe build active file",
+        "command": "cl.exe",
+        "args": [
+          "/Zi",
+          "/EHsc",
+          "/I", "C:/Users/Chai/Desktop/cpp-libs/opencv/build/include",   // 添加 OpenCV 头文件路径
+          "/Fe:",
+
+          "${fileDirname}\\${fileBasenameNoExtension}.exe",
+          "${file}",
+
+          "/link",
+          "C:/Users/Chai/Desktop/cpp-libs/opencv/build/x64/vc16/lib/opencv_world4100d.lib"
+
+
+        ],
+        "problemMatcher": ["$msCompile"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+  

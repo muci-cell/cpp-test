@@ -1,0 +1,3 @@
+C:/Users/Chai/Desktop/cpp-test/build/CMakeFiles/main.dir
+C:/Users/Chai/Desktop/cpp-test/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Chai/Desktop/cpp-test/build/CMakeFiles/ZERO_CHECK.dir

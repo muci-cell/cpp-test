@@ -1,0 +1,10 @@
+^C:\USERS\CHAI\DESKTOP\CPP-TEST\TEST\TEST_Z2\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Chai/Desktop/cpp-test/test/test_z2 -BC:/Users/Chai/Desktop/cpp-test/test/test_z2 --check-stamp-file C:/Users/Chai/Desktop/cpp-test/test/test_z2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
